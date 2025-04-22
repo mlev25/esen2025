@@ -1,0 +1,11 @@
+1745306032061:list books
+1745306256608:help
+1745306855909:create book --title Valami --price 123 --publisher anyad --author apad
+1745306993529:help
+1745307011264:list books
+1745307029888:create book
+1745307083016:create book --author valaki --price 11 --title o1g --publisher valaki
+1745307087069:list books
+1745307302332:create book
+1745307330876:create book --title valami --price 121 --author valaki --publisher valaki
+1745307333201:list books
