@@ -9,3 +9,16 @@
 1745307302332:create book
 1745307330876:create book --title valami --price 121 --author valaki --publisher valaki
 1745307333201:list books
+1745909301092:update book --id 1 --title A
+1745909305110:list books
+1745909308439:delete book 1
+1745909350532:list books
+1745909997088:delete book --id 1
+1745910000789:list books
+1745911079258:list bookstores
+1745911083566:help
+1745911125168:list bookstores
+1745911460812:help
+1745911463531:list bookstores
+1745911468660:delete bookstore 1
+1745911471079:list bookstores

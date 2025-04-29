@@ -1,6 +1,7 @@
 package com.esen.bookstore.repository;
 
 import com.esen.bookstore.model.Book;
+import lombok.Data;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
