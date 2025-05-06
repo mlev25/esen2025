@@ -9,6 +9,7 @@ import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 import org.springframework.shell.standard.ShellOption;
 
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @ShellComponent
@@ -52,4 +53,28 @@ public class BookHandler {
         return bookService.update(id, title, author, publisher, price).toString();
 
     }
+
+
+    @ShellMethod(value = "Finds prices of a book in every bookstore", key = "find prices")
+    public String findPrices(Long id){
+
+//        StringBuilder stringBuilder = new StringBuilder("Arak:");
+//        Map<String, Double> tempMap = bookService.findPrices(id);
+//        for (String s : tempMap.keySet()) {
+//            stringBuilder.append("\n").append(s).append(": ").append(tempMap.get(s));
+//        }
+        return bookService.findPrices(id).toString();
+    }
+
+    @ShellMethod(value = "Finds every book by author or publisher", key = "find books")
+    public String findByPublisherOrTitle( @ShellOption(defaultValue =  ShellOption.NULL) String publisher,
+                                          @ShellOption(defaultValue =  ShellOption.NULL) String title,
+                                          @ShellOption(defaultValue =  ShellOption.NULL) String author){
+
+        return bookService.findByPublisherOrTitle(publisher,title, author)
+                .stream()
+                .map(Book::toString)
+                .collect(Collectors.joining(System.lineSeparator()));
+    }
+
 }

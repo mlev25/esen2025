@@ -22,3 +22,25 @@
 1745911463531:list bookstores
 1745911468660:delete bookstore 1
 1745911471079:list bookstores
+1746512033726:list books
+1746512746241:create bookstore
+1746512757328:list bookstores
+1746512813004:create bookstore --location Kokad --priceModifier 1.5
+1746512857809:create bookstore --location Kokad --priceModifier 1.5 --moneyInCashRegister 10
+1746512860729:list bookstores
+1746513447686:list bookstore
+1746513449506:list bookstores
+1746513460208:help
+1746513482031:list books
+1746513485293:list bookstore
+1746513487073:list bookstores
+1746513519999:update bookstore --id 1 --location Budapest2 --priceModifier 1.6 --moneyInCashRegister 1.4
+1746513563546:list bookstores
+1746514952714:list books
+1746514960286:help
+1746514975599:find prices --id 3
+1746516096477:help
+1746516116309:find books --title Az aranyember
+1746516120786:find books --title "Az aranyember"
+1746516323004:help
+1746516445001:find books --title "Az aranyember"
